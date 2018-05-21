@@ -37,5 +37,4 @@
         </tbody>
       </table>
     </div>
-    <!--{!! Form::checkbox($task->id, 'value') !!}-->
 @endsection
