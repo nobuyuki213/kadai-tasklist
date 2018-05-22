@@ -3,10 +3,11 @@
 @section('title', 'New create')
 
 @section('content')
-
-    <h1>Task new create</h1>
-    <div class="row">
-        <div class="col-xl-6 col-md-8">
+    <div class="text-center">
+        <h1>Task new create</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xl-6 col-xl-offset-3 col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12">
             {!! Form::model($task, ['route' => 'tasks.store'] ) !!}
                 <div class="form-group">
                     {!! Form::label('content', 'Add task:') !!}

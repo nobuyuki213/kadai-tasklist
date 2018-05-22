@@ -3,8 +3,9 @@
 @section('title', 'Task show')
 
 @section('content')
-
-    <h1>Task</h1>
+    <div class="text-center">
+        <h1>Task</h1>
+    </div>
 
     <table class="table table-hover">
         <tr>

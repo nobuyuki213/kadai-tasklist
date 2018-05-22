@@ -3,12 +3,12 @@
 @section('title', 'edit!')
 
 @section('content')
-
-    <h1>Task editing</h1>
-
-    <h5>Task No：{{ $task->id }}</h5>
-    <div class="row">
-        <div class="col-xl-6 col-md-8">
+    <div class="text-center">
+        <h1>Task editing</h1>
+        <h5>Task No：{{ $task->id }}</h5>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xl-6 col-xl-offset-3 col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12">
             {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
                 <div class="form-group">
                     {!! Form::label('content', 'Task edit：') !!}

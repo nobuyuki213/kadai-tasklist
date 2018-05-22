@@ -3,8 +3,9 @@
 @section('title', 'index')
 
 @section('content')
-
-    <h1>Tasks list</h1>
+    <div class="text-center">
+      <h1>Tasks list</h1>
+    </div>
     
     <p>{!! Html::decode(link_to_route('tasks.create', '<i class="fas fa-plus-circle"></i> Create new task!', array(), ['class' => 'btn btn-primary'])) !!}</p>
     <div>
