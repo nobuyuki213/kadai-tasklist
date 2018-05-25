@@ -9,5 +9,10 @@ class Task extends Model
     /**
      * 1文での複数登録
      */
-    protected $fillable = ['content'];
+    protected $fillable = ['content', 'user_id'];
+    
+    public function user()
+    {
+        return $this->belongTo(User::class);
+    }
 }
